@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+    <meta name="robots" content="INDEX,FOLLOW" />
+    <meta name="robots" content="noimageindex" />
+    <meta name="keywords" content="" />
+    <title>Moments</title>
+    <link rel="manifest" href="./manifest.json">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700|Lato|Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/icons/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/icons/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/icons/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/icons/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/icons/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/icons/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/icons/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/icons/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/icons/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicons/-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/icons/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicons/favicon-16x16.png">
+    <!-- Safari Add To Home Screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <meta name="apple-mobile-web-app-title" content="Moments Manager">
+    <link rel="apple-touch-icon" href="./images/icons/icon-152x152.png">
+    <!-- Window Add To Home Screen -->
+    <meta name="msapplication-TileImage" content="./images/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+ </head>
+<body>
+
+<!-- Start NavBar -->
+<header>
+	<div class="navBar-left">
+    	<a class="headerLogo" href="index.html">
+			<img src="images/momentswhite.png" />
+		</a>
+	</div>
+
+	<div class="navBar-middle">
+    	<a class="mobileLogo" href="index.php">
+			<img src="images/momentswhite.png" />
+		</a>
+	</div>
+
+	<div class="navBar-right">
+		<span class="timerBtn">
+			<i class="fa fa-clock-o" aria-hidden="true"></i>
+			<span>
+			</span>
+		</span>
+	</div>
+</header>
+<!-- End NavBar -->
+
+<main class="content-wrapper">
+		<!-- Start Main Content -->
+		<div class="main-content">
+			<!-- Welcome User -->
+			<div class="col-sm-12 pad-col table-topper-container">
+				<div class="col-sm-12 no-padding col-md-10 col-md-offset-1">
+					<div class="table-topper">
+						<div class="col-sm-12 welcome-banner">
+							<h1>Welcome to Moments Manager</h1>
+								<p>Find your summary below</p>
+						</div>
+
+					<div class="col-sm-12 no-padding col-md-9 col-md-offset-2">
+						<div class="col-xs-12 col-sm-4 col-md-4 no-padding left-box b-box">
+							<div class="tile-icon col-xs-12 col-sm-4 col-md-2 no-padding">
+								<i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+							</div>
+														
+							<div class="col-xs-12 col-sm-8 col-md-10 tile-text">
+								<h1 class="project_count">0 Projects</h1>
+								<p>Completed</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 no-padding left-box y-box">
+							<div class="tile-icon col-xs-12 col-sm-4 col-md-2 no-padding">
+								<i class="fa fa-clock-o" aria-hidden="true"></i>
+							</div>
+							<div class="col-xs-12 col-sm-8 col-md-10 tile-text">
+								<h1 class="hours_count">0 Hours</h1>
+								<p>Completed</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4 col-md-4 no-padding left-box p-box">
+							<div class="tile-icon col-xs-12 col-sm-4 col-md-2 no-padding">
+								<i class="fa fa-gbp" aria-hidden="true"></i>
+							</div>
+							<div class="col-xs-12 col-sm-8 col-md-10 tile-text">
+								<h1 class="salary_count">£0.00</h1>
+								<p>Earned</p>
+							</div>
+						</div>
+					</div>
+
+					</div>
+				</div>
+			</div>
+			<!--End Welcome User -->
+
+			<!-- New Project and Modal Form -->
+			<form method="post" class="form-horizontal" id="projectsForm">
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 no-padding">
+					<div class="t_container timer_container">
+						<div class="t_header">
+							<p class="t_header_title time_title">Start A New Project</p>
+								<p class="t_header_msg">You have nothing to do.<br>Start a new project.</p>
+								<textarea readonly=readonly class="t_header_time timer hiddenBtn" name="timer" id="project_time">0 Sec</textarea>
+						</div>
+				
+						<div class="t_content">
+							<button type="button" class="btn newProjectBtn" data-toggle="modal" data-target="#newProject">New Project</button>
+
+							<button type="button" class="btn recordBtn hiddenBtn">Start</button>
+
+
+							<div class="stop_pause hiddenBtn">
+								
+								<button type="button" class="btn pauseBtn">Pause</button>
+								<button type="button" class="btn resumeBtn hiddenBtn">Resume</button>
+								<button type="submit" name="savenewProject" class="btn stopBtn">Stop</button> 
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- New Project Modal -->
+				<div id="newProject" class="modal fade" role="dialog">
+				  	<div class="modal-dialog">
+
+				    <!-- Modal content-->
+				    	<div class="modal-content">
+				      		<div class="modal-header">
+				        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+				        			<h4 class="modal-title">New Project</h4>
+					      	</div>
+
+					      	<div class="modal-body">
+									<div class="form-group">
+									    <div class="col-sm-12">
+									      <input type="text" class="form-control" id="project_name" name="project_name" placeholder="Name">
+									    </div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-12">
+				        					<input class="form-control" id="client" name="client" placeholder="Client" type="text"/>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="col-sm-12">
+				        					<input class="form-control" id="description" name="description" placeholder="Description" type="text"/>
+										</div>
+									</div>
+								  	<div class="form-group">
+								    		<div class="col-sm-12">
+								      			<input type="text" class="form-control" id="location" name="location" placeholder="Location">
+								    		</div>
+								  	</div>
+								  	<div class="form-group">
+								    		<div class="col-sm-12">
+								      			<input type="text" class="form-control" id="hourly_rate" name="hourly_rate" placeholder="Salary/h">
+								    		</div>	
+								  	</div>
+								  	<div class="form-group" style="display: none;">
+								    		<div class="col-sm-12">
+								      			<input type="text" class="form-control" id="salary" name="salary" placeholder="Salary/h">
+								    		</div>	
+								  	</div>
+								  	<div class="form-group" style="display: none;">
+								    		<div class="col-sm-12">
+								      			<input type="text" class="form-control" name="project_time" placeholder="Time">
+								    		</div>	
+								  	</div>
+
+								  	<div class="form-group" style="display: none;">
+								    		<div class="col-sm-12">
+								    <input type="text" class="form-control" name="project_date" id="project_date" value="<?php echo date("d/m/Y") ?>">
+								    		</div>	
+								  	</div>
+
+							      	<div class="modal-footer">
+							      		<button type="button" name="projsave" class="btn-small btn-blue" id="projSaveBtn" data-dismiss="modal">Save</button>
+							        	<button type="button" class="btn-small btn-pink" data-dismiss="modal">Close</button>
+							      	</div>  
+					      	</div>
+
+				    	</div>
+				  	</div>
+				</div>
+
+			</form><!-- End New Project and Modal Form -->
+
+			<!-- All Projects -->
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 no-padding allProjs">
+				<div class="t_container projects_holder">
+					<div class="t_header">
+						<p class="t_header_title">Projects</p>
+					</div>
+
+					<div class="t_content">
+						<div class="table-responsive">
+							<table class="table projects_table">
+								<thead>
+									<tr>
+							    		<th style="display:none;\">Project ID</th>
+										<th>Project Name</th>
+										<th style="display:none;">Client</th>
+										<th style="display:none;">Description</th>
+										<th style="display:none;">Location</th>
+										<th style="display:none;">Rate £/h</th>
+										<th style="display:none;">Salary</th>
+										<th style="display:none;">Total Time</th>
+										<th class="noDate">Date</th>
+										<th>View</th>
+									</tr>
+								</thead>
+								<tbody id="projects_container">
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<!-- end All Projects -->
+
+			<!-- View Project Modal -->
+			<div id="singleProject" class="singleProject modal fade" role="dialog">
+				<div class="modal-dialog">
+			    	<!-- Modal content-->
+			    	<div class="modal-content">
+			      		<div class="modal-header">
+			        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+			        			<h4 class="modal-title">Summary</h4>
+				      	</div>
+
+				      	<div class="modal-body">
+
+				      	</div>
+
+			    	</div>
+			  	</div>
+			</div>	
+			<!-- End View Project Modal -->
+
+		</div><!-- end main-content -->
+
+</main>
+
+<!-- Footer -->
+    <footer id="footer">
+    <p style="font-size: 12px">A Progressive Web App By Keshia Brown &copy; 2017<!--<?php echo date("Y"); ?>--></p>
+    </footer>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+</html>
+<!-- End Footer -->
